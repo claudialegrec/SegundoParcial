@@ -4,53 +4,59 @@
 
 	
 	<title>Examen Segundo Parcial</title>
-	<style src="manzanasCSS.css"></style>
-	<script type="text/javascript" src="manzanasJS.js"></script>
+	<script type="text/javascript" src="manzanascript.js"></script>
+
 </head>
 <body>
 	<h1>Producción de Manzanas</h1>
 
-
 	<div>
 		
-
 		<div class="column">
-			<img id="image" src="manzanas.jpg" width="600">
+			<img src="manzana.png" height="150px">
 		</div>
 
 		<div class="column">
 			<div>
 				<label>Producción total</label>
 				<input type="text" id="txtTotal" value="250" readonly>
-				<input  type="button" onclick="mostrarTotal()" value="Número total de manzanas">
+				<button onclick="mostrarTotal()">Número total de manzanas</button>
 
 				<br>
 				<br>
 
 				<label>Producción actual</label>
 				<input type="text" id="txtActual" value="0" readonly>
-				<input type="button" onclick="mostrarActual()" value="Número actual de manzanas">
+				<button onclick="mostrarActual()">Número actual de manzanas</button>
+				
 			</div>
 
 			<br>
 
 			<div class="botones">
-				<input onclick="agregar5()" type="button" value=5> 
-				<input onclick="agregar15()" type="button" value=15>
-				<input onclick="agregar30()" type="button" value=30>
-				<input onclick="agregar50()" type="button" value=50>
+				<button onclick="agregar5()">+5</button>
+				<button onclick="agregar15()">+15</button>
+				<button onclick="agregar30()">+30</button>
+				<button onclick="agregar50()">+50</button>
 			</div>
+
+			<br>
+
 			<div>
 				<label>Porcentaje de Producción</label>
 				<input type="text" id="txtPorcentaje"  readonly>
-				<input  type="button" onclick="calcular()" value="calcular">
+				<button onclick="Calcular()">Calcular</button>
 				<br>
 				<br>
-				<button onclick="reset()">Reiniciar</button>
+				<button onclick="Reiniciar()">Reiniciar</button>
 			</div>
+
 		</div>
 
 	</div>
 	
 </body>
+
+</script>
+
 </html>
